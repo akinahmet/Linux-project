@@ -8,7 +8,7 @@ if [ `whoami` != 'root' ]
 fi
 
 # Which files are we going to back up. Please make sure to exist /home/ec2-user/data file
-
+# Or create data file
 touch data
 
 # Where do we backup to. Please crete this file before execute this script
@@ -26,7 +26,7 @@ archive_file="$hostname-$current.tgz"
 echo "Backing up"
 
 # Backup the files using tar.
-tar czf /mnt/backup/$archive_file /home/ec2-user/data
+tar czf /mnt/backup/$archive_file /home/ec2-user/data  
 
 # Print end status message.
 
