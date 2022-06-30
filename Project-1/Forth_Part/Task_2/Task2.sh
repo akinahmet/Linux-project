@@ -1,8 +1,11 @@
 #!/bin/bash
-for i in {1..10}
-do
-   cat certificate.pem | cut -d'\' -f$i >> new.pem
-done
+MY_KEY=$(cat certificate.pem)
+
+echo $MY_KEY
+
+echo -e $MY_KEY > new.pem
+
+
 
 
 
