@@ -37,4 +37,4 @@ echo "Backup finished"
 
 /mnt/backup
 
-# crontab ==>  (5 * * * * ./backup.sh)
+# crontab ==>  (*/5 * * * * ./backup.sh)
