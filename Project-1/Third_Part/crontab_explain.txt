@@ -1,0 +1,16 @@
+# To set this script for executing in every 5 minutes, we'll create cronjob
+```bash
+crontab -e
+```
+- vi or nano editor will open. We will run  backup.sh script in every 5 minutes. To be able to do this we\'ll write this within opend vi or nano file
+
+```bash
+*/5 * * * * sudo /home/ec2-user/backup.sh
+```
+
+- save and exit from nano or vi
+
+- To check whether your Cron Jobs is saved or not, run the below command.
+```bash
+$crontab -l
+```
