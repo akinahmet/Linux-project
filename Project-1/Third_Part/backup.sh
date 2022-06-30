@@ -27,7 +27,7 @@ echo "Backing up"
 
 # Backup the files using tar.
 tar czf /mnt/backup/$archive_file /home/ec2-user/data  
-
+# c create, z zip, f file
 # Print end status message.
 
 echo "Backup finished"
