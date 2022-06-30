@@ -10,6 +10,7 @@ if [ `whoami` != 'root' ]
     echo "You must be root to do this."
     exit
 fi
+# You can check root user with userID too (root user ID ($UID) = 0)
 
 # Get the username (login).
 
@@ -45,7 +46,7 @@ else
     echo "Password  not created"
 fi
 # Force password change on first login.
-
+# passwd -e $username
 
 # Display the username, password, and the host where the user was created.
 echo "User name is : $username"
